@@ -21,7 +21,7 @@ console.log("Environment variables:", Object.keys(process.env));
 
 // Use absolute paths
 const baseDir = __dirname;
-const configPath = path.join(baseDir, "config", "connectTODb.js");
+const configPath = path.join(baseDir, "config", "DbConnect.js");
 const authMiddlewarePath = path.join(
   baseDir,
   "middlewares",
