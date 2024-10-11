@@ -17,7 +17,7 @@ router.post('/add',async(req,res)=>{
             cart=new Cart({userId:req.user.userId,items:[]});
         }   
 
-        const existingItem=cart.items.find(item=>item.productId===productId);
+        const existingItem=cart.items.find(item=>item.productId==productId);
         
         //if item already exists in cart, increase the quantity
         if(existingItem){

@@ -15,6 +15,8 @@ export default function Navbar() {
         {user ? (
           <>
             <Link to="/cart">Cart</Link>
+            <Link to="/orders">My Orders</Link>
+
             <button onClick={logout}>logout</button>
           </>
         ) : (
